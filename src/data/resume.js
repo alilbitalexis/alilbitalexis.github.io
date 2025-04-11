@@ -49,7 +49,7 @@ const resume = {
     {
       institution: "Catawba Valley Community College",
       name: "Associates in Web Technologies",
-      timeframe: "August 2013 - May 2015",
+      timeframe: "August 2013 to May 2015",
       description: "Degree program focused mainly on front-end development during college, with some classes in backend and full-stack development such as Mobile Java development, C++ development, and database fundamentals. Built websites mostly using Dreamweaver and Notepad++ during these courses.",
       online: false,
       location: "Hickory, NC"
@@ -57,7 +57,7 @@ const resume = {
     {
       institution: "PluralSight",
       name: "Various Courses and Paths",
-      timeframe: "August 2015 - Ongoing",
+      timeframe: "August 2015 to March 2016",
       description: "Completed interactive courses in HTML5, CSS3, Flexbox, Git, JavaScript, jQuery, AngularJS, and other HTML and JavaScript lessons.",
       online: true,
       location: "https://www.pluralsight.com"
@@ -65,7 +65,7 @@ const resume = {
     {
       institution: "Codecademy",
       name: "Freelance Web Design Course",
-      timeframe: "February 2017 - April 2017",
+      timeframe: "February 2017 to April 2017",
       description: "Participated in an eight-week course designed to teach users to design, build and deploy professional websites from scratch using HTML, CSS, JavaScript, and Github. The course helped me solidify an overall front-end skill set, particularly in regards to Flexbox and Github.",
       online: true,
       location: "https://www.codeschool.com"

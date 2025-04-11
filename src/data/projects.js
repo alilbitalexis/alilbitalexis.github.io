@@ -27,7 +27,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/the-flatiron-building.jpg",
     languages: [],
-    active: false
+    active: true
   },
   {
     name: "Colmar Academy",
@@ -36,7 +36,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/banner.jpg",
     languages: [],
-    active: false
+    active: true
   },
   {
     name: "Fotomatic",
@@ -45,7 +45,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/feature-1.png",
     languages: [],
-    active: false
+    active: true
   },
   {
     name: "Secret Agent Supply",
@@ -54,7 +54,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/motorcycle-gear.jpeg",
     languages: [],
-    active: false
+    active: true
   },
   {
     name: "TeaCozy",
@@ -63,7 +63,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/img-berryblitz.jpg",
     languages: [],
-    active: false
+    active: true
   },
   {
     name: "Tortoiseshell Optics",
@@ -72,6 +72,6 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/glasses-bg.jpg",
     languages: [],
-    active: false
+    active: true
   }
 ]

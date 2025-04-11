@@ -62,11 +62,13 @@ export default function About() {
       {techCategories.map((tc, key) => (
         <article key={key}>
           <h4>{tc.label}</h4>
-          {languages
-            .filter((l) => l.category === tc.id)
-            .map((l, lKey) => (
-              <Badge key={lKey} icon={l.icon} lang={l.label} />
-            ))}
+          <div className="languages">
+            {languages
+              .filter((l) => l.category === tc.id)
+              .map((l, lKey) => (
+                <Badge key={lKey} icon={l.icon} lang={l.label} />
+              ))}
+          </div>
         </article>
       ))}
     </section>

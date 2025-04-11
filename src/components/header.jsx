@@ -25,7 +25,7 @@ export default function Header() {
   }
   return (
     <header>
-      <div className="logo"></div>
+      <div className="logo">Alexis Elliott</div>
       <nav>
         {links.map((l, key) => (
           <a key={key} onClick={(e) => scrollTo(e, l.id)} href="">

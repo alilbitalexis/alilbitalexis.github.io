@@ -1,0 +1,10 @@
+$light: #f9f9f9;
+$dark: #242424;
+$primary: #2e8bc9;
+
+$font: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
