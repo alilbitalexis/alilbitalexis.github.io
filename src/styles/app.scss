@@ -3,8 +3,7 @@
 header {
   @include v.flex-wrap;
   justify-content: space-between;
-  padding: 1rem 3rem;
-  background-color: black;
+  padding: 1rem 0;
 
   .logo {
     font-size: 1.8rem;
@@ -24,11 +23,13 @@ header {
   }
 }
 
+$darkenColor: lighten(v.$dark, 20%);
+
 .hero {
   @include v.flex-wrap;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(black, black, #111);
+  gap: 5rem;
 
   &-text {
     flex: 0 0 30%;
@@ -44,12 +45,15 @@ header {
     width: 20%;
     height: 20%;
     border-radius: 50%;
+    outline: 5px solid $darkenColor;
   }
 }
 
 main {
-  padding: 3rem;
-  background-image: linear-gradient(#111, v.$dark);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   section {
     padding: 3rem 0 0;
@@ -65,7 +69,8 @@ main {
 
       article.projects-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-template-rows: auto;
         gap: 2rem;
 
         .projects-card {
@@ -119,8 +124,41 @@ main {
       }
     }
 
-    div.languages {
+    &#about {
+    }
+
+    &#contact {
       display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      form {
+        max-width: 56rem;
+        width: 100%;
+
+        label {
+          @include v.flex-wrap;
+          padding: 1rem 0;
+          font-size: 1.8rem;
+
+          input,
+          textarea {
+            flex: 1 0 100%;
+            margin: 1rem 0;
+            padding: 1rem;
+            font-size: 1.8rem;
+            font-family: v.$font;
+            background-color: v.$dark;
+            border: 2px solid rgba(darken(v.$primary, 20%), 0.5);
+            border-radius: 1rem;
+            color: v.$light;
+          }
+        }
+      }
+    }
+
+    div.languages {
+      @include v.flex-wrap;
       gap: 1rem;
       padding: 1rem 0;
 
@@ -133,4 +171,11 @@ main {
       }
     }
   }
+}
+
+footer {
+  @include v.flex-wrap;
+  justify-content: space-between;
+  padding: 3rem 0 5rem;
+  font-size: 1.3rem;
 }

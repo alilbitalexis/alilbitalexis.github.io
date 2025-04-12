@@ -1,24 +1,22 @@
 export default function Contact() {
   const formFields = [
     {
-      id: "firstName",
-      label: "First Name",
+      id: "name",
+      label: "Name",
       type: "text",
-    },
-    {
-      id: "lastName",
-      label: "Last Name",
-      type: "text",
+      placeholder: "Jane Doe",
     },
     {
       id: "email",
       label: "Email Address",
       type: "email",
+      placeholder: "janedoe@email.com",
     },
     {
       id: "desc",
       label: "Description",
       type: "textarea",
+      placeholder: "Send me a message",
     },
   ];
   return (
@@ -29,9 +27,19 @@ export default function Contact() {
           <label key={key} htmlFor={ff.id}>
             {ff.label}{" "}
             {ff.type === "textarea" ? (
-              <textarea name={ff.id} id={ff.id}></textarea>
+              <textarea
+                name={ff.id}
+                id={ff.id}
+                placeholder={ff.placeholder}
+                rows={5}
+              ></textarea>
             ) : (
-              <input type={ff.type} name={ff.id} id={ff.id} />
+              <input
+                type={ff.type}
+                name={ff.id}
+                id={ff.id}
+                placeholder={ff.placeholder}
+              />
             )}
           </label>
         ))}

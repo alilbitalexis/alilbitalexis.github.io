@@ -1,22 +1,7 @@
+// Data
+import { links } from "../data/config";
+
 export default function Header() {
-  const links = [
-    {
-      id: "projects",
-      label: "Projects",
-    },
-    {
-      id: "resume",
-      label: "Resume",
-    },
-    {
-      id: "about",
-      label: "About",
-    },
-    {
-      id: "contact",
-      label: "Contact",
-    },
-  ];
   function scrollTo(e, id) {
     e.preventDefault();
     document
