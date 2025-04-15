@@ -1,8 +1,16 @@
-$light: #f9f9f9;
-$dark: #222;
-$primary: #2e8bc9;
+@use "sass:color";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-$font: system-ui, Avenir, Helvetica, Arial, sans-serif;
+$light: #ded6d1;
+$dark: #0a1128;
+$dark2: #333;
+$dark3: #555;
+$primary: #23a8c6;
+$primaryDark: color.scale($primary, $lightness: -20%);
+$secondary: #eec6ca;
+
+$headingFont: Fraunces;
+$bodyFont: Nunito;
 
 @mixin flex-wrap {
   display: flex;

@@ -9,11 +9,11 @@ export default function Resume() {
         <h4>Work Experience</h4>
         {resume.experiences.map((ex, key) => (
           <div key={key} className="experience">
-            <h5>{ex.title}</h5>
-            <h6>
+            <h5>
               {ex.company}
               <span className="timeframe">{ex.timeframe}</span>
-            </h6>
+            </h5>
+            <h6>{ex.title}</h6>
             <ul>
               {ex.description.map((d, dKey) => (
                 <li key={dKey}>{d}</li>
@@ -26,13 +26,20 @@ export default function Resume() {
         <h4>Education</h4>
         {resume.educations.map((ed, key) => (
           <div key={key} className="education">
-            <h5>{ed.name}</h5>
-            <h6>
-              {ed.institution} | {ed.location}
+            <h5>
+              {ed.online ? (
+                <>
+                  <a href={ed.location}>
+                    {ed.institution} <span className="online">Online</span>
+                  </a>
+                </>
+              ) : (
+                ed.institution
+              )}
               <span className="timeframe">{ed.timeframe}</span>
-            </h6>
+            </h5>
+            <h6>{ed.name}</h6>
             <p>{ed.description}</p>
-            {ed.online && <p>Online</p>}
           </div>
         ))}
       </article>

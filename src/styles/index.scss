@@ -1,7 +1,7 @@
 @use "./variables" as v;
 
 :root {
-  font-family: v.$font;
+  font-family: v.$bodyFont;
   line-height: 1.5;
   font-weight: 400;
   color: v.$light;
@@ -19,7 +19,6 @@ body {
   place-items: center;
   min-width: 32rem;
   min-height: 100vh;
-  // background-image: linear-gradient(black, #242424, #242424);
 }
 
 #root {
@@ -37,6 +36,7 @@ h6 {
   line-height: 1.1;
   padding: 1rem 0;
   margin: 0;
+  font-family: v.$headingFont;
 }
 
 h1 {
@@ -51,10 +51,12 @@ h2 {
 
 h3 {
   font-size: 2.8em;
+  color: v.$secondary;
 }
 
 h4 {
   font-size: 2.4em;
+  color: v.$secondary;
 }
 
 h5 {
@@ -63,6 +65,7 @@ h5 {
 
 h6 {
   font-size: 1.6em;
+  font-family: v.$bodyFont;
 }
 
 button {
@@ -72,12 +75,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: v.$dark;
   cursor: pointer;
   transition: border-color 0.25s;
 
   &:hover {
-    border-color: #646cff;
+    border-color: v.$primary;
   }
 
   &:focus,

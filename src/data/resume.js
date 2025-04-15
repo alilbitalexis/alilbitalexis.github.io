@@ -68,7 +68,7 @@ const resume = {
       timeframe: "February 2017 to April 2017",
       description: "Participated in an eight-week course designed to teach users to design, build and deploy professional websites from scratch using HTML, CSS, JavaScript, and Github. The course helped me solidify an overall front-end skill set, particularly in regards to Flexbox and Github.",
       online: true,
-      location: "https://www.codeschool.com"
+      location: "https://www.codecademy.com"
     }
   ]
 };
