@@ -96,11 +96,16 @@ img {
 a {
   font-size: 1.6rem;
   text-decoration: none;
+  color: v.$secondary;
+
+  &:hover {
+    color: v.$primary;
+  }
 }
 
 li,
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .container {

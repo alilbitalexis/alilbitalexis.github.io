@@ -1,3 +1,32 @@
+import {
+  AngularjsOriginal,
+  BitbucketOriginal,
+  BootstrapOriginal,
+  ConfluenceLine,
+  ConfluenceOriginal,
+  Css3Original,
+  FigmaOriginal,
+  GithubOriginal,
+  GitlabOriginal,
+  GitOriginal,
+  Html5Original,
+  JavascriptOriginal,
+  JenkinsOriginal,
+  JiraOriginal,
+  JqueryOriginal,
+  MicrosoftsqlserverOriginal,
+  NextjsOriginal,
+  PostgresqlOriginal,
+  PostmanOriginal,
+  PrismaOriginal,
+  ReactOriginal,
+  ReactrouterOriginal,
+  ReduxOriginal,
+  SassOriginal,
+  VscodeOriginal,
+} from "devicons-react";
+import { RiRemixRunFill } from "react-icons/ri";
+
 const resume = {
   experiences: [
     {
@@ -12,8 +41,8 @@ const resume = {
         "Migrated and combined three existing databases into one centralized database which was then used as a backend for admin UI, one of the eight new apps, that managed data for five of the applications.",
         "Due to my experience within the call center and managing the knowledge base, served as a subject matter expert between business and technology teams.",
         "Implemented REST APIs in frontend code.",
-        "Implemented and managed CI/CD through Jenkins and Harness for more than a dozen frontend applications."
-      ]
+        "Implemented and managed CI/CD through Jenkins and Harness for more than a dozen frontend applications.",
+      ],
     },
     {
       title: "Knowledge Systems Administrator",
@@ -27,8 +56,8 @@ const resume = {
         "Managed and updated SQL data for applications based on business ticket requests.",
         "Created and managed taxonomy system for internal knowledge base for call center.",
         "Developed and edited articles with input from call center SMEs within knowledge base of several thousand articles.",
-        "Led team on creation and modification of new knowledge base UI during upgrade, including major design decisions around font, layout, etc."
-      ]
+        "Led team on creation and modification of new knowledge base UI during upgrade, including major design decisions around font, layout, etc.",
+      ],
     },
     {
       title: "Team Leader",
@@ -42,17 +71,18 @@ const resume = {
         "Provided ongoing coaching for identified casework issues for each agent.",
         "Led agents during first two weeks on call center floor to assist with calls and questions.",
         "Handled escalations from customers to resolve issues with agents, payment concerns, and technical support assistance.",
-      ]
-    }
+      ],
+    },
   ],
   educations: [
     {
       institution: "Catawba Valley Community College",
       name: "Associates in Web Technologies",
       timeframe: "August 2013 to May 2015",
-      description: "Degree program focused mainly on front-end development during college, with some classes in backend and full-stack development such as Mobile Java development, C++ development, and database fundamentals. Built websites mostly using Dreamweaver and Notepad++ during these courses.",
+      description:
+        "Degree program focused mainly on front-end development during college, with some classes in backend and full-stack development such as Mobile Java development, C++ development, and database fundamentals. Built websites mostly using Dreamweaver and Notepad++ during these courses.",
       online: false,
-      location: "Hickory, NC"
+      location: "Hickory, NC",
     },
     {
       institution: "PluralSight",
@@ -60,128 +90,124 @@ const resume = {
       timeframe: "August 2015 to March 2016",
       description: "Completed interactive courses in HTML5, CSS3, Flexbox, Git, JavaScript, jQuery, AngularJS, and other HTML and JavaScript lessons.",
       online: true,
-      location: "https://www.pluralsight.com"
+      location: "https://www.pluralsight.com",
     },
     {
       institution: "Codecademy",
       name: "Freelance Web Design Course",
       timeframe: "February 2017 to April 2017",
-      description: "Participated in an eight-week course designed to teach users to design, build and deploy professional websites from scratch using HTML, CSS, JavaScript, and Github. The course helped me solidify an overall front-end skill set, particularly in regards to Flexbox and Github.",
+      description:
+        "Participated in an eight-week course designed to teach users to design, build and deploy professional websites from scratch using HTML, CSS, JavaScript, and Github. The course helped me solidify an overall front-end skill set, particularly in regards to Flexbox and Github.",
       online: true,
-      location: "https://www.codecademy.com"
-    }
-  ]
+      location: "https://www.codecademy.com",
+    },
+  ],
 };
 
 const languages = [
   {
     label: "JavaScript",
-    icon: null,
-    category: "frontend"
+    icon: <JavascriptOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "ReactJS",
-    icon: null,
-    category: "frontend"
+    icon: <ReactOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "HTML",
-    icon: null,
-    category: "frontend"
+    icon: <Html5Original size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "CSS",
-    icon: null,
-    category: "frontend"
-  },
-  {
-    label: "TypeScript",
-    icon: null,
-    category: "frontend"
+    icon: <Css3Original size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "NextJS",
-    icon: null,
-    category: "frontend"
+    icon: <NextjsOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "Redux",
-    icon: null,
-    category: "frontend"
+    icon: <ReduxOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "SASS",
-    icon: null,
-    category: "frontend"
+    icon: <SassOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "Bootstrap",
-    icon: null,
-    category: "frontend"
+    icon: <BootstrapOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "AngularJS",
-    icon: null,
-    category: "frontend"
+    icon: <AngularjsOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
     label: "jQuery",
-    icon: null,
-    category: "frontend"
+    icon: <JqueryOriginal size="1.8rem" />,
+    category: "frontend",
   },
   {
-    label: "Remix",
-    icon: null,
-    category: "frontend"
+    label: "Remix/ReactRouter 7",
+    icon: <ReactrouterOriginal />,
+    category: "frontend",
   },
   {
     label: "SQL Server",
-    icon: null,
+    icon: <MicrosoftsqlserverOriginal size="1.8rem" />,
     category: "database",
   },
   {
     label: "PostgreSQL",
-    icon: null,
+    icon: <PostgresqlOriginal size="1.8rem" />,
     category: "database",
   },
   {
     label: "Prisma",
-    icon: null,
+    icon: <PrismaOriginal size="1.8rem" />,
     category: "database",
   },
   {
     label: "Git",
-    icon: null,
+    icon: <GitOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "Bitbucket",
-    icon: null,
+    icon: <BitbucketOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "JIRA",
-    icon: null,
+    icon: <JiraOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "Confluence",
-    icon: null,
+    icon: <ConfluenceOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "GitHub",
-    icon: null,
+    icon: <GithubOriginal size="1.8rem" color="white" />,
     category: "tools",
   },
   {
     label: "GitLab",
-    icon: null,
+    icon: <GitlabOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "Jenkins",
-    icon: null,
+    icon: <JenkinsOriginal size="1.8rem" />,
     category: "tools",
   },
   {
@@ -191,17 +217,17 @@ const languages = [
   },
   {
     label: "Postman",
-    icon: null,
+    icon: <PostmanOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "Figma",
-    icon: null,
+    icon: <FigmaOriginal size="1.8rem" />,
     category: "tools",
   },
   {
     label: "VSCode",
-    icon: null,
+    icon: <VscodeOriginal size="1.8rem" />,
     category: "tools",
   },
   // {

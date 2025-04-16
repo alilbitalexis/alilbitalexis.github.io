@@ -1,12 +1,9 @@
-import { languages } from "./resume";
-
-
 export const projects = [
   {
     name: "Mountain Fried Chicken",
     url: "https://www.mountainfriedchickenhickory.com/",
     githubUrl: "https://github.com/alilbitalexis/mfc-hickory",
-    description: "DESCRIPTION",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod nibh at pulvinar bibendum. Vestibulum et erat ornare, dignissim est id, mattis ex. Mauris varius magna urna, vitae rhoncus erat tincidunt a.",
     image: "../images/mfc-hickory.jpg",
     languages: ["HTML", "CSS", "JavaScript", "ReactJS", "NextJS"],
     active: true
@@ -27,7 +24,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/the-flatiron-building.jpg",
     languages: [],
-    active: true
+    active: false
   },
   {
     name: "Colmar Academy",
@@ -36,7 +33,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/banner.jpg",
     languages: [],
-    active: true
+    active: false
   },
   {
     name: "Fotomatic",
@@ -45,7 +42,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/feature-1.png",
     languages: [],
-    active: true
+    active: false
   },
   {
     name: "Secret Agent Supply",
@@ -54,7 +51,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/motorcycle-gear.jpeg",
     languages: [],
-    active: true
+    active: false
   },
   {
     name: "TeaCozy",
@@ -63,7 +60,7 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/img-berryblitz.jpg",
     languages: [],
-    active: true
+    active: false
   },
   {
     name: "Tortoiseshell Optics",
@@ -72,6 +69,6 @@ export const projects = [
     description: "DESCRIPTION",
     image: "../images/glasses-bg.jpg",
     languages: [],
-    active: true
+    active: false
   }
 ]

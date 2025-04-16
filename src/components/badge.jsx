@@ -1,7 +1,7 @@
 export default function Badge({ lang, icon }) {
   return (
     <span>
-      {icon && <span>Icon</span>}
+      {icon && icon}
       {lang}
     </span>
   );
