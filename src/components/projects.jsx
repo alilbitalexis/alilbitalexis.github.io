@@ -26,11 +26,11 @@ export default function Projects() {
               </div>
               <div className="buttons">
                 {p.githubUrl && (
-                  <a href={p.githubUrl} target="_blank">
+                  <a className="button" href={p.githubUrl} target="_blank">
                     GitHub
                   </a>
                 )}
-                <a href={p.url} target="_blank">
+                <a className="button" href={p.url} target="_blank">
                   View Site
                 </a>
               </div>

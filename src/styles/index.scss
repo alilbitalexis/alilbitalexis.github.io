@@ -104,6 +104,22 @@ a {
   }
 }
 
+button,
+a.button {
+  background-color: v.$primary;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: v.$dark;
+  transition: all 0.3s ease-in;
+  font-size: 1.6rem;
+
+  &:hover {
+    background-color: v.$primaryDark2;
+    color: v.$light;
+  }
+}
+
 li,
 p {
   font-size: 1.6rem;

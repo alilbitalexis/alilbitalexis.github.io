@@ -128,19 +128,6 @@ main {
               @include v.flex-wrap;
               gap: 1.5rem;
               padding: 0.5rem 0;
-
-              a {
-                background-color: v.$primary;
-                border-radius: 1rem;
-                padding: 0.5rem 1rem;
-                color: v.$dark;
-                transition: all 0.3s ease-in;
-
-                &:hover {
-                  background-color: v.$primaryDark2;
-                  color: v.$light;
-                }
-              }
             }
           }
         }
@@ -271,6 +258,11 @@ main {
             border-radius: 1rem;
             color: v.$light;
           }
+        }
+
+        p {
+          padding: 0.5rem 1rem;
+          margin: 0;
         }
       }
     }
