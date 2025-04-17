@@ -22,22 +22,21 @@ export default function About() {
       <h2>about me.</h2>
       {/* Fill in with real information later */}
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod nibh at pulvinar bibendum. Vestibulum et erat ornare, dignissim est id, mattis ex. Mauris varius magna urna, vitae
-        rhoncus erat tincidunt a. Phasellus commodo nulla quis urna interdum, non dictum erat semper. Nullam nibh nisi, consequat vel semper in, aliquam sit amet tortor. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas. Nam sed porttitor eros. Suspendisse potenti. In tempor, lorem quis commodo porta, justo mauris congue dolor, vitae pharetra
-        ipsum nunc ac felis.
+        In 8th grade, I took an advanced keyboarding class with a partial focus on website building. From my first html tag through becoming a supporter/advocate/promoter for external stylesheets over
+        inline, I immediately fell in love with web design and development, and I continued exploring my love throughout high school and eventually into college.
       </p>
       <p>
-        Aenean varius metus ipsum. Nam nec accumsan tortor. Suspendisse rutrum a mauris nec viverra. Sed purus mi, congue at ante eu, laoreet finibus sem. Nulla malesuada dui risus, eget sollicitudin
-        nisl cursus eget. Nullam lobortis justo nisl, at sagittis odio sagittis pellentesque. Etiam et sollicitudin ligula. Nulla facilisi. Pellentesque viverra, sapien in maximus aliquam, metus lacus
-        tristique enim, sed tincidunt dui ligula quis est. Duis auctor ipsum quis est aliquam bibendum. Proin eget tincidunt augue. Cras bibendum mauris sed libero egestas efficitur. Sed eget maximus
-        arcu, et dictum eros. Aliquam erat volutpat. Pellentesque eleifend faucibus porta. In nibh eros, convallis a dignissim a, euismod eget arcu.
+        After college, I was lucky enough to fuse my job as a technical writer into a part-time application developer on our team, building frontends of apps that assisted our contact center agents
+        during calls with clients. A few years later, I was promoted into a full-time software development team where I continued building my experience by shifting into a ReactJS-focused role which
+        included becoming experienced with SQL data management and script writing.
       </p>
       <p>
-        Sed consectetur bibendum leo ac ornare. Morbi non malesuada orci. Sed tincidunt eleifend pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Sed porttitor, nisl quis faucibus porta, nibh risus finibus nisi, non molestie nisi metus ac velit. Sed vel mattis lectus. Suspendisse eget sagittis enim. Phasellus non ipsum tristique,
-        venenatis leo et, semper ex. Duis porta mollis tellus, sit amet lobortis mi iaculis non. Morbi placerat massa orci. Morbi vel justo ut ante placerat ultricies. Sed consectetur, metus id
-        venenatis aliquam, sapien mi dictum turpis, quis placerat nisl lectus in lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        I am proud of my rise from a contact center agent to a five-year frontend developer that took place over a 15-year period of professional development. My passion remains in frontend
+        development, specifically around web design, functionality, and user experience.
+      </p>
+      <p>
+        In the life side of my work/life balance, I am now an avid reader after a few decades of forgetting books existed. I am also venturing into creative writing, a growing passion. Outside of the
+        literary arts, I enjoy a video game here and there (on the easier modes), and I love going to the movies still.
       </p>
       <h3>Languages and Tools</h3>
       {techCategories.map((tc, key) => (

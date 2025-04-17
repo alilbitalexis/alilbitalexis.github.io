@@ -11,7 +11,12 @@ export default function Projects() {
           .filter((p) => p.active)
           .map((p, key) => (
             <div key={key} className="projects-card">
-              <img src={p.image} alt="" />
+              <a href={p.url} target="_blank">
+                <div className="img-container">
+                  <img src={p.image} alt="" />
+                  <h6>{p.type === 1 ? "commissioned work" : "side project"}</h6>
+                </div>
+              </a>
               <h4>{p.name}</h4>
               <div className="description">{p.description}</div>
               <div className="languages">

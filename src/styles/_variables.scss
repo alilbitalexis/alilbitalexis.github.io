@@ -9,6 +9,7 @@ $primary: #23a8c6;
 $primaryDark: color.scale($primary, $lightness: -20%);
 $primaryDark2: color.scale($primary, $lightness: -40%);
 $secondary: #eec6ca;
+// $tertiary: #ffb7c3; // if needed
 
 $headingFont: Fraunces;
 $bodyFont: Nunito;

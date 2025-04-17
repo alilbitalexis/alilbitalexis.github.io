@@ -2,7 +2,6 @@ import {
   AngularjsOriginal,
   BitbucketOriginal,
   BootstrapOriginal,
-  ConfluenceLine,
   ConfluenceOriginal,
   Css3Original,
   FigmaOriginal,
@@ -15,6 +14,7 @@ import {
   JiraOriginal,
   JqueryOriginal,
   MicrosoftsqlserverOriginal,
+  NetlifyOriginal,
   NextjsOriginal,
   PostgresqlOriginal,
   PostmanOriginal,
@@ -23,9 +23,9 @@ import {
   ReactrouterOriginal,
   ReduxOriginal,
   SassOriginal,
+  VercelOriginal,
   VscodeOriginal,
 } from "devicons-react";
-import { RiRemixRunFill } from "react-icons/ri";
 
 const resume = {
   experiences: [
@@ -232,12 +232,12 @@ const languages = [
   },
   // {
   //   label: "Netlify (not yet)",
-  //   icon: null,
+  //   icon: <NetlifyOriginal size="1.8rem" />,
   //   category: "tools",
   // },
   // {
   //   label: "Vercel (not yet)",
-  //   icon: null,
+  //   icon: <VercelOriginal size="1.8rem" />,
   //   category: "tools",
   // },
 ];

@@ -10,6 +10,9 @@ export default function Resume() {
         {resume.experiences.map((ex, key) => (
           <div key={key} className="experience">
             <h5>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
+              </svg>
               {ex.company}
               <span className="timeframe">{ex.timeframe}</span>
             </h5>
@@ -30,11 +33,19 @@ export default function Resume() {
               {ed.online ? (
                 <>
                   <a href={ed.location}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                      <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                    </svg>{" "}
                     {ed.institution} <span className="online">Online</span>
                   </a>
                 </>
               ) : (
-                ed.institution
+                <>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                  </svg>{" "}
+                  {ed.institution}
+                </>
               )}
               <span className="timeframe">{ed.timeframe}</span>
             </h5>
