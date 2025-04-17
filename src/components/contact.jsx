@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 import emailJs from "@emailjs/browser";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   const form = useRef();
@@ -75,7 +77,13 @@ export default function Contact() {
         {status === "success" ? <p>Message sent!</p> : status === "error" ? <p>Something went wrong. Please try again.</p> : null}
         {status === "" && (
           <button type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? (
+              <>
+                Sending... <FontAwesomeIcon icon={faSpinner} spin pulse />
+              </>
+            ) : (
+              "Send Message"
+            )}
           </button>
         )}
       </form>

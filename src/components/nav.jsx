@@ -1,6 +1,7 @@
 // Data
-import { useState } from "react";
-import { links } from "../data/config";
+import { links, socialLinks } from "../data/config";
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import "@fortawesome/free-brands-svg-icons";
 
 export default function Nav({ mobile, setMobile }) {
   function scrollTo(e, id) {
@@ -20,7 +21,16 @@ export default function Nav({ mobile, setMobile }) {
           {l.label}
         </a>
       ))}
-      {mobile && <h4>Social</h4>}
+      {mobile && (
+        <>
+          <h4>Social</h4>
+          {socialLinks.map((sl, key) => (
+            <a key={key} href={sl.url} target="_blank">
+              <Icon icon={sl.icon} size="xl" color={sl.color} />
+            </a>
+          ))}
+        </>
+      )}
     </nav>
   );
 }

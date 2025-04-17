@@ -40,7 +40,7 @@ header {
       height: 100vh;
       z-index: 1;
       background-color: v.$light;
-      padding: 8rem 0;
+      padding: 6rem 0;
       flex-direction: column;
       align-items: center;
 
@@ -61,28 +61,33 @@ header {
     z-index: 2;
     position: relative;
     cursor: pointer;
+    padding: 0 0.5rem;
 
     span {
       height: 0;
-      width: 20px;
-      border: 1px solid white;
+      width: 2rem;
+      border: 1px solid v.$light;
       transition: all 0.3s ease;
     }
 
     &.active {
-      span:first-child {
-        transform: rotate(45deg);
-        margin-top: 0.8rem;
-      }
+      span {
+        border-color: v.$dark;
 
-      span:nth-child(2) {
-        display: none;
-        opacity: 0;
-      }
+        &:first-child {
+          transform: rotate(45deg);
+          margin-top: 0.8rem;
+        }
 
-      span:last-child {
-        transform: rotate(-45deg);
-        margin-top: -1rem;
+        &:nth-child(2) {
+          display: none;
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+          margin-top: -1rem;
+        }
       }
     }
   }
@@ -206,8 +211,13 @@ main {
           h5 {
             padding: 2rem 0 0;
             display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+            align-items: baseline;
+            gap: 1rem;
+
+            span {
+              display: inline-flex;
+              gap: 0.5rem;
+            }
 
             svg {
               opacity: 0;
@@ -225,6 +235,15 @@ main {
               font-family: v.$bodyFont;
               padding: 0 0.5rem;
             }
+
+            .timeframe {
+              display: inline-block;
+              font-family: v.$bodyFont;
+              color: v.$primaryDark;
+              margin-left: 0.5rem;
+              font-size: 1.4rem;
+              font-weight: 500;
+            }
           }
 
           &:hover h5 svg {
@@ -236,15 +255,6 @@ main {
           h6 {
             padding: 1rem 0 0;
             color: v.$primary;
-          }
-
-          .timeframe {
-            display: inline-block;
-            font-family: v.$bodyFont;
-            color: v.$primaryDark;
-            margin-left: 1rem;
-            font-size: 1.4rem;
-            font-weight: 500;
           }
 
           a {
@@ -312,6 +322,7 @@ main {
             border: 2px solid rgba(v.$primary, 0.5);
             border-radius: 1rem;
             color: v.$light;
+            box-sizing: border-box;
           }
         }
 
@@ -351,7 +362,7 @@ footer {
   color: v.$dark;
   margin: 0 -4rem;
   flex: 1 0 100%;
-  @include v.flex-wrap;
+  gap: 1rem;
 
   &:first-child {
     justify-content: space-between;
@@ -392,6 +403,31 @@ footer {
 
       &.mobile {
         display: flex;
+      }
+    }
+  }
+
+  main section {
+    &#resume {
+      article {
+        .experience,
+        .education {
+          h5 {
+            flex-wrap: wrap;
+
+            svg {
+              display: inline-block;
+              opacity: 1;
+              height: 1.8rem;
+              width: 1.8rem;
+            }
+
+            span.timeframe {
+              margin-left: 0;
+              flex: 1 0 100%;
+            }
+          }
+        }
       }
     }
   }

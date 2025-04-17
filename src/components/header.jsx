@@ -1,6 +1,5 @@
 // Data
 import { useState } from "react";
-import { links } from "../data/config";
 import Nav from "./nav";
 
 export default function Header() {
