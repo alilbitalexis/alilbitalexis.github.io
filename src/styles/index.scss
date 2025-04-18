@@ -22,10 +22,15 @@ body {
 }
 
 #root {
-  max-width: 128rem;
   margin: 0 auto;
-  padding: 0 4rem;
+  width: 100%;
 }
+
+// .container {
+//   max-width: 128rem;
+//   width: 100%;
+//   justify-self: center;
+// }
 
 h1,
 h2,
@@ -123,12 +128,6 @@ a.button {
 li,
 p {
   font-size: 1.6rem;
-}
-
-.container {
-  max-width: 128rem;
-  width: 100%;
-  justify-self: center;
 }
 
 // @media (prefers-color-scheme: light) {

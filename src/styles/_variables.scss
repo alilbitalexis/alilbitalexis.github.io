@@ -18,3 +18,8 @@ $bodyFont: Nunito;
   display: flex;
   flex-wrap: wrap;
 }
+
+@mixin container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
