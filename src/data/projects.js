@@ -6,7 +6,7 @@ export const projects = [
     type: 1,
     description: "Client is an independent franchiser for a small chain of restaurants and wanted their own website for branding purposes. Client sought to keep the same logo but have a refreshed, modern look.",
     image: "../images/mfc-hickory.jpg",
-    languages: ["HTML", "CSS", "JavaScript", "ReactJS", "NextJS"],
+    languages: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
     active: true
   },
   {

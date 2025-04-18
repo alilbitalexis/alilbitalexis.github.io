@@ -34,9 +34,9 @@ const resume = {
       company: "Fiserv",
       timeframe: "November 2019 to December 2024",
       description: [
-        "Created wireframe designs and implemented designs into eight new applications using ReactJS.",
-        "Refactored and redesigned four existing applications using ReactJS.",
-        "Assisted on three major CRM development projects, built with ReactJS, leading to more than $5 million in savings for call center.",
+        "Created wireframe designs and implemented designs into eight new applications using React.",
+        "Refactored and redesigned four existing applications using React.",
+        "Assisted on three major CRM development projects, built with React, leading to more than $5 million in savings for call center.",
         "Wrote and analyzed SQL queries for business data.",
         "Migrated and combined three existing databases into one centralized database which was then used as a backend for admin UI, one of the eight new apps, that managed data for five of the applications.",
         "Due to my experience within the call center and managing the knowledge base, served as a subject matter expert between business and technology teams.",
@@ -111,7 +111,7 @@ const languages = [
     category: "frontend",
   },
   {
-    label: "ReactJS",
+    label: "React",
     icon: <ReactOriginal size="1.8rem" />,
     category: "frontend",
   },
@@ -126,8 +126,8 @@ const languages = [
     category: "frontend",
   },
   {
-    label: "NextJS",
-    icon: <NextjsOriginal size="1.8rem" />,
+    label: "Next.js",
+    icon: <NextjsOriginal size="1.8rem" className="inverted" />,
     category: "frontend",
   },
   {
@@ -172,7 +172,7 @@ const languages = [
   },
   {
     label: "Prisma",
-    icon: <PrismaOriginal size="1.8rem" />,
+    icon: <PrismaOriginal size="1.8rem" className="inverted" />,
     category: "database",
   },
   {
@@ -197,7 +197,7 @@ const languages = [
   },
   {
     label: "GitHub",
-    icon: <GithubOriginal size="1.8rem" color="white" />,
+    icon: <GithubOriginal size="1.8rem" className="inverted" />,
     category: "tools",
   },
   {

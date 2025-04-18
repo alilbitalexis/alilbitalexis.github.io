@@ -131,17 +131,17 @@ p {
   justify-self: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
 
-  a:hover {
-    color: #747bff;
-  }
+//   a:hover {
+//     color: #747bff;
+//   }
 
-  button {
-    background-color: v.$light;
-  }
-}
+//   button {
+//     background-color: v.$light;
+//   }
+// }

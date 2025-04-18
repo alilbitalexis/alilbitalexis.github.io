@@ -159,7 +159,7 @@ main {
             position: relative;
             border-radius: 0.5rem;
             transition: transform 0.5s ease;
-            z-index: -1;
+            z-index: 0;
 
             &:hover {
               transform: scale(1.05);
@@ -216,7 +216,8 @@ main {
 
             span {
               display: inline-flex;
-              gap: 0.5rem;
+              gap: 0;
+              transition: gap 0.3s ease;
             }
 
             svg {
@@ -234,6 +235,7 @@ main {
               border-radius: 1rem;
               font-family: v.$bodyFont;
               padding: 0 0.5rem;
+              margin-left: 0.5rem;
             }
 
             .timeframe {
@@ -244,22 +246,30 @@ main {
               font-size: 1.4rem;
               font-weight: 500;
             }
+
+            a {
+              color: v.$light;
+              font-size: inherit;
+              display: inline-flex;
+              align-items: center;
+            }
           }
 
-          &:hover h5 svg {
-            display: inline;
-            opacity: 1;
-            width: 1.8rem;
+          &:hover h5 {
+            span {
+              gap: 0.5rem;
+            }
+
+            svg {
+              display: inline;
+              opacity: 1;
+              width: 1.8rem;
+            }
           }
 
           h6 {
             padding: 1rem 0 0;
             color: v.$primary;
-          }
-
-          a {
-            color: v.$light;
-            font-size: inherit;
           }
 
           ul {
@@ -288,10 +298,18 @@ main {
           &:hover {
             background-color: v.$light;
             color: v.$dark;
+
+            svg.inverted {
+              filter: none;
+            }
           }
 
           svg {
             font-size: 1.8rem;
+
+            &.inverted {
+              filter: invert(1);
+            }
           }
         }
       }
@@ -408,6 +426,16 @@ footer {
   }
 
   main section {
+    &#projects {
+      article.projects-grid {
+        .projects-card {
+          .img-container {
+            z-index: -1;
+          }
+        }
+      }
+    }
+
     &#resume {
       article {
         .experience,
